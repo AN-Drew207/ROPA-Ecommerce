@@ -26,20 +26,20 @@ const App = () =>{
   <Router>
    <NavbarComponent/>
     <Switch>
-    <Route path="/" exact component={Home}/>
+    <Route path="/ROPA-Ecommerce/" exact component={Home}/>
     {   
       categories.map((category)=>{
-        return(<Route path={"/Category/"+category}  component={()=><ProductsComponent key={category} category={category}/>}/>
+        return(<Route path={"/ROPA-Ecommerce/Category/"+category}  component={()=><ProductsComponent key={category} category={category}/>}/>
         )
       })
     }
     {
       products.map((product)=>{
-        return(<Route path={"/Product/"+product.id}  component={()=><ProductPageComponent key={product.id} id={product.id} title={product.title} image={product.image}  price={product.price} description={product.description}/>}/>
+        return(<Route path={"/ROPA-Ecommerce/Product/"+product.id}  component={()=><ProductPageComponent key={product.id} id={product.id} title={product.title} image={product.image}  price={product.price} description={product.description}/>}/>
         )
       })
     }
-    <Route path="/Cart" component={Cart}/>
+    <Route path="/ROPA-Ecommerce/Cart" component={Cart}/>
    </Switch>
   </Router>
  )

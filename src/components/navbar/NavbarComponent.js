@@ -22,10 +22,10 @@ const NavbarComponent = ()=>{
             Categories
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a className="dropdown-item" href="/Category/electronics">Electronics</a></li>
-            <li><a className="dropdown-item" href="/Category/jewelery">Jewelery</a></li>
-            <li><a className="dropdown-item" href="/Category/men's Clothing">Men's Clothing</a></li>
-            <li><a className="dropdown-item" href="/Category/women's Clothing">Women's Clothing</a></li>
+            <li><a className="dropdown-item" href="/ROPA-Ecommerce/Category/electronics">Electronics</a></li>
+            <li><a className="dropdown-item" href="/ROPA-Ecommerce/Category/jewelery">Jewelery</a></li>
+            <li><a className="dropdown-item" href="/ROPA-Ecommerce/Category/men's Clothing">Men's Clothing</a></li>
+            <li><a className="dropdown-item" href="/ROPA-Ecommerce/Category/women's Clothing">Women's Clothing</a></li>
           </ul>
       </li>
       <li className="nav-item">
