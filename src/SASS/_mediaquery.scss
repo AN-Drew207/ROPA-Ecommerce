@@ -1,0 +1,129 @@
+@media (min-width:1000px){
+ .product-group-inner{
+  grid-template-columns: repeat(4,25%);
+ }
+ .filters{
+  display: flex;
+  flex-direction: column;
+ }
+ .filters-collapse{
+  display: none!important;
+ }
+ .container-product{
+  grid-template-columns: 50% 40%;
+   grid-gap: 5%;
+    padding: 40px;
+ .img-product-page{
+  height: 50vh;
+  width: 30vw;
+ }
+ }
+  .btn-cart{
+    p{
+      font-size: 12px!important;
+    }
+ }
+}
+
+@media (max-width:1000px){
+ .product-group-inner{
+  grid-template-columns: repeat(2,50%);
+ }
+ .filters{
+  display: none;
+ }
+.filters-collapse{
+  display: flex;
+ }
+ .container-product{
+  grid-template-columns: 80%;
+   padding: 10px;
+  grid-gap: 0px;
+  h2{
+   font-size: 30px;
+  }
+  .img-product-page{
+   height: 50vh;
+   width: 50vw;
+  }
+  .container-content-product{
+   margin-top: 20px;
+  }
+ }
+ .btn-cart{
+    p{
+      font-size: 10px!important;
+    }
+ }
+}
+
+@media (max-width:575px) {
+ .container-add-cart{
+  grid-template-columns: 100%;
+ }
+ .product-group-inner{
+  grid-template-columns: 100%;
+ }
+ #hamburger-links{
+  position: sticky;
+  top:59px;
+  z-index: 2;
+ }
+ #Cart{
+    h3, h5, h4, input{
+       font-size: 15px;
+    }
+   .container-product-cart{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+   .img-product-cart{
+      display: none;
+   }
+   .price-content{
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: 100%;
+      h4{
+         text-align: center;
+      }
+   }
+ }
+}
+
+@media (min-width:575px) {
+ .container-add-cart{
+  grid-template-columns: 75% 25%;
+  input{
+   margin: 10px 0px;
+  }
+ }
+ #hamburger-links{
+  display: none!important;
+ }
+ #Cart{
+   h3, h4  {
+       font-size: 20px;
+    }
+   .container-product-cart{
+      flex-direction: row;
+   }
+ }
+ .price-content{
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: auto auto;
+      h4{
+         text-align: center;
+      }
+   }
+}
+
+@media (max-width:400px){
+ .filters-collapse{
+  p{
+     display: none;
+  }
+ }
+}

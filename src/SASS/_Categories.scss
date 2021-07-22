@@ -1,0 +1,66 @@
+.category{
+   input[type=number]::-webkit-inner-spin-button,
+   input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+   }
+   input[type=number] { 
+     -moz-appearance:textfield; 
+     border-radius: 0px;
+     
+     border: solid 1px #212121; 
+    }
+   input[type=number]:focus { 
+     border: solid 1px #ffcf91;
+     box-shadow: none;
+     outline: none;
+   }
+  .filters-collapse{
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px 0px;
+    font-size: 10px;
+    p, h5{
+      margin: 0;
+    }
+    h5{
+      font-size: 15px;
+      margin: 0px 5px;
+    }
+    p{
+      font-size: 12px;
+    }
+    form{
+      width: auto;
+    }
+   .input{
+    font-size: 10px;
+    width: 40%;
+   }   
+  }
+ .filters{
+  padding: 40px 0px;
+   .results{
+    font-size: 12px;
+    color: #555;
+   }
+   h4{
+    font-size: 20px;
+   }
+   h5{
+    font-size: 17px;
+   }
+   .input{
+    font-size: 13px;
+    width: 40%;
+   }   
+   .btn{
+    font-size: 10px;
+    border-radius: 200px;
+    padding: 2px 6px;
+    margin-left: 2px;
+   }
+ }
+
+}

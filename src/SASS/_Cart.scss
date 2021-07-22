@@ -1,0 +1,28 @@
+#Cart{
+ margin: 5vh 5vw;
+ border-radius: 5px;
+ box-shadow: 1px 2px 3px #555;
+    input[type=number]::-webkit-inner-spin-button,
+   input[type=number]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+   }
+   input[type=number] { -moz-appearance:textfield; }
+ .img-product-cart{
+  height: 150px;
+  width: 100%;
+ }
+ .price-container{
+  border-top: solid 1px #ccc;
+ }
+ .container-product-cart{
+   display: flex;
+ }
+}
+.Cart-Empty{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  height: 75vh;
+  width: 100vw;
+}

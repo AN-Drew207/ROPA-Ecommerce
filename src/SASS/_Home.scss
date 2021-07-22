@@ -1,0 +1,26 @@
+.product-group{
+ display: grid;
+ .title{
+ color: #222;
+ }
+ .card-link{
+  color: #222;
+  text-decoration: none;
+  &:hover{
+   color: #333;
+  }
+ }
+ .card{
+  background-color: transparent;
+  box-shadow: #555 1px 2px 3px;
+  &:hover{
+   box-shadow: #333 2px 3px 4px;
+   transition: 0.5s ease;
+   background-color: #ffcf91;
+  }
+ }
+ .card-img-top{
+  height: 250px;
+  padding: 5px;
+ }
+}
