@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ROPA-Ecommerce/static/css/main.b0ac07c8.chunk.css",
-    "main.js": "/ROPA-Ecommerce/static/js/main.e00abf3c.chunk.js",
-    "main.js.map": "/ROPA-Ecommerce/static/js/main.e00abf3c.chunk.js.map",
+    "main.js": "/ROPA-Ecommerce/static/js/main.7083cdf0.chunk.js",
+    "main.js.map": "/ROPA-Ecommerce/static/js/main.7083cdf0.chunk.js.map",
     "runtime-main.js": "/ROPA-Ecommerce/static/js/runtime-main.716d8cc5.js",
     "runtime-main.js.map": "/ROPA-Ecommerce/static/js/runtime-main.716d8cc5.js.map",
     "static/css/2.455652b6.chunk.css": "/ROPA-Ecommerce/static/css/2.455652b6.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.455652b6.chunk.css",
     "static/js/2.7b4cf25d.chunk.js",
     "static/css/main.b0ac07c8.chunk.css",
-    "static/js/main.e00abf3c.chunk.js"
+    "static/js/main.7083cdf0.chunk.js"
   ]
 }
