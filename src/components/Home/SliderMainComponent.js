@@ -11,17 +11,17 @@ const SliderMainComponent = () =>{
    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
      <div className="carousel-inner">
         <div className="carousel-item active">
-         <a href="/Category/men's clothing">
+         <a href="/#/ROPA-Ecommerce/Category/men's clothing">
           <img src={sliderMain1} className="d-block w-100" alt="men clothing"/>
          </a>
         </div>
         <div class="carousel-item">
-         <a href="/Category/electronics">
+         <a href="/#/ROPA-Ecommerce/Category/electronics">
           <img  src={sliderMain2} className="d-block w-100" alt="electronics"/>
          </a>
         </div>
         <div class="carousel-item">
-         <a href="/Category/women's clothing">
+         <a href="/#/ROPA-Ecommerce/Category/women's clothing">
           <img  src={sliderMain3} className="d-block w-100" alt="women clothing"/>
          </a>
         </div>

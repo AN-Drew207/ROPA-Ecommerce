@@ -2,7 +2,7 @@
   "name": "legendstore-ecommerce",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://an-drew207.github.io/ROPA-Ecommerce/",
+  "homepage": "https://an-drew207.github.io/ROPA-Ecommerce",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b gh-deploy -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +42,9 @@
     ]
   },
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "gh-pages": "^3.2.3",
+    "http-server": "^0.12.3",
+    "node-sass": "^6.0.1",
+    "serve": "^12.0.0"
   }
 }
