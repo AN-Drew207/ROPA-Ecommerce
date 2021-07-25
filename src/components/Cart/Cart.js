@@ -47,7 +47,7 @@ const Cart = () =>{
    }
   allproducts=allproducts.filter(product =>product.cant!==0);
   }else{
-   window.alert("Esta intentando eliminar una cantidad que excede su cantidad actual, intente de nuevo con otro número")
+   window.alert ("You are trying to remove more than you have added")
   }
   setProductos(allproducts)
   setCant({...cant,[productId]:""});
@@ -92,7 +92,10 @@ const Cart = () =>{
   }
   <div className="d-flex flex-row justify-content-between p-5 price-container">
    <h3>Total</h3>
-   <h3>{price}$</h3>
+   <div className="d-flex flex-column justify-content-center align-items-center">
+    <h3>{price}$</h3>
+    <a className="text-decoration-none text-dark" href="/ROPA-Ecommerce/#/CartPurchased"><button className="btn btn-warning">Purchase</button></a>
+  </div>
   </div>
  </section> 
  

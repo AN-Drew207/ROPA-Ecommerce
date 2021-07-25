@@ -6,6 +6,7 @@ import Home from './Routes/Home';
 import ProductsComponent from './Categories/ProductComponent';
 import ProductPageComponent from './ProductPageComponent';
 import Cart from './Cart/Cart';
+import CartPurchased from './Cart/CartPurchased';
 
 const App = () =>{
   const [categories, setCategories]= useState([]);
@@ -25,9 +26,10 @@ const App = () =>{
  return(
   <>
   <NavbarComponent/>
-  <Router basename="https://an-drew207.github.io/ROPA-Ecommerce">
+  <Router basename={process.env.PUBLIC_URL}>
     <Route path="/" exact component={Home}/>
     <Route path="/Cart" component={Cart}/>
+    <Route path="/CartPurchased" component={CartPurchased}/>
     {   
       categories.map((category)=>{
         return(<Route path={"/Category/"+category} exact component={()=><ProductsComponent key={category} category={category}/>}/>

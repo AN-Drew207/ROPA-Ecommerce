@@ -27,10 +27,15 @@ const ProductPageComponent = (props) =>{
   }
   if(repeated){
     products[elementRepeated].cant+=parseInt(cant);
+    window.alert(`Se han agregado ${cant} ${products[elementRepeated].title}`)
+    console.log(products[elementRepeated])
   }else{
     let productAux={...props, cant:cant};
     products={...products, [props.id]:productAux};
+    window.alert(`You added ${cant} ${productAux.title} to the cart`)
+    console.log(productAux)
   }
+  
   window.localStorage.setItem('cart', JSON.stringify(products));
  }
 
