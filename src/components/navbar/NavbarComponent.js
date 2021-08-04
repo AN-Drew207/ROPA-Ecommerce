@@ -8,6 +8,7 @@ const NavbarComponent = ()=>{
   const handleSubmitSearch =()=>{
     window.localStorage.setItem('search', search);
     window.location.replace ("/ROPA-Ecommerce/#/Search")
+    document.location.reload();
   }
 
  return (
@@ -17,7 +18,7 @@ const NavbarComponent = ()=>{
      <a href="/ROPA-Ecommerce/"><img className="logo d-inline-block align-text-top " src={logo} alt="logo" /></a>
      <div className="container-fluid search-toggler">
       <form onSubmit={handleSubmitSearch} className="form-group d-flex flex-row justify-content-center w-100">
-        <input type="text" placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)} className="form-control w-75"/>
+        <input type="text" placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)} className="form-control w-75 search"/>
         <button id="btn-search" type="submit" className="btn btn-light"><i className="bi bi-search"></i></button>
       </form>
     </div>

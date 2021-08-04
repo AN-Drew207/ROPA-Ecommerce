@@ -30,13 +30,21 @@
    }
   }
  }
+ #btn-search{
+    font-size: 10px;
+ }
+ .btn{
+    border-top-left-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+    }
+    .form-control{
+        border-top-right-radius: 0px!important;
+        border-bottom-right-radius: 0px!important;
+    }
 }
  .nav-item .active{
   color:#ffcf91 !important;
   .bi-cart{
    padding-right: 5px;
-  }
-  #btn-search{
-      font-size: 10px;
   }
  }
