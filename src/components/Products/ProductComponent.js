@@ -1,20 +1,30 @@
 import React,  {useState, useEffect} from 'react';
-import ProductGroupElement from '../ProductGroupElement'
+import ProductGroupElement from './ProductGroupElement'
 
 const ProductsComponent = (props)=>{
  const [minPrice, setMinPrice]=useState();
  const [maxPrice, setMaxPrice]=useState();
  const [products, setProducts] = useState([]);
+ const [isLoading, setIsLoading]= useState(true);
  useEffect(()=>{
   fetch(`https://fakestoreapi.com/products/category/${props.category}`)
             .then(res=>res.json())
-            .then(json=>setProducts(json))
+            .then(json=>{setIsLoading(false);setProducts(json)})
  }, [])
 
 
 
 
  return( 
+  isLoading ?
+  <section className="Cart-Empty d-flex flex-column
+  ">
+      <div className="spinner-border text-dark" role="status">
+          <span className="visually-hidden"></span>
+      </div>
+      <h3 className="text-dark">Loading...</h3>
+  </section>
+  :
   <section className="category">
     <div className="filters-collapse">
      <p className="text-center results">{products.length} results |</p>

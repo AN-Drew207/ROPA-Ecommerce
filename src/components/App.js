@@ -3,10 +3,11 @@ import React, {useState, useEffect} from 'react'
 import NavbarComponent from './navbar/NavbarComponent';
 import { HashRouter as Router, Route} from 'react-router-dom';
 import Home from './Routes/Home';
-import ProductsComponent from './Categories/ProductComponent';
-import ProductPageComponent from './ProductPageComponent';
+import ProductsComponent from './Products/ProductComponent';
+import ProductPageComponent from './Products/ProductPageComponent';
 import Cart from './Cart/Cart';
 import CartPurchased from './Cart/CartPurchased';
+import ProductsSearchComponent from './Products/ProductsSearchComponent';
 
 const App = () =>{
   const [categories, setCategories]= useState([]);
@@ -30,6 +31,7 @@ const App = () =>{
     <Route path="/" exact component={Home}/>
     <Route path="/Cart" component={Cart}/>
     <Route path="/CartPurchased" component={CartPurchased}/>
+    <Route path="/Search" component={ProductsSearchComponent}/>
     {   
       categories.map((category)=>{
         return(<Route path={"/Category/"+category} exact component={()=><ProductsComponent key={category} category={category}/>}/>

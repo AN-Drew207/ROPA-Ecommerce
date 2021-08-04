@@ -21,10 +21,10 @@
   .logo{
    height: 40px;
   }
-  button{
+  .navbar-toggler{
    border: none;
    box-shadow: none;  
-   font-size: 30px; 
+   font-size: 30px;
    .bi-list{
     color:#ffcf91 !important;
    }
@@ -35,5 +35,8 @@
   color:#ffcf91 !important;
   .bi-cart{
    padding-right: 5px;
+  }
+  #btn-search{
+      font-size: 10px;
   }
  }

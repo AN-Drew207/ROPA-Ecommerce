@@ -7,6 +7,7 @@ const Cart = () =>{
  const [cant, setCant] = useState({})
 
  useEffect(()=>{
+
   let cartProducts=JSON.parse(window.localStorage.getItem('cart'))
   let cartProductsFinal=[]
   let sum=0;
@@ -20,6 +21,7 @@ const Cart = () =>{
   setCant(cants);
   setPrice(sum);
   setProductos(cartProductsFinal);
+  
  },[])
 
  useEffect(()=>{
@@ -53,6 +55,14 @@ const Cart = () =>{
   setCant({...cant,[productId]:""});
   console.log(cant)
   console.log(allproducts)
+ }
+
+ const handleClick = (e) =>{
+  e.preventDefault();
+  let confirmar= window.confirm("Are you sure about your purchase?");
+  if(confirmar){
+    window.location.href= "/ROPA-Ecommerce/#/CartPurchased"
+  }
  }
 
  return(
@@ -94,7 +104,7 @@ const Cart = () =>{
    <h3>Total</h3>
    <div className="d-flex flex-column justify-content-center align-items-center">
     <h3>{price}$</h3>
-    <a className="text-decoration-none text-dark" href="/ROPA-Ecommerce/#/CartPurchased"><button className="btn btn-warning">Purchase</button></a>
+    <a className="text-decoration-none text-dark" onClick={handleClick} href=""><button className="btn btn-warning">Purchase</button></a>
   </div>
   </div>
  </section> 

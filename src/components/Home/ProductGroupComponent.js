@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react' 
-import ProductGroupElement from '../ProductGroupElement';
+import ProductGroupElement from '../Products/ProductGroupElement';
 
 const ProductGroupComponent = (props) =>{
  const [products, setProducts]=useState([]);

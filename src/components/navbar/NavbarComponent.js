@@ -3,14 +3,33 @@ import logo from '../../img/logo.png'
 
 const NavbarComponent = ()=>{
  const [displayList, setDisplayList]=useState(false)
+ const [search, setSearch]=useState("")
+
+  const handleSubmitSearch =()=>{
+    window.localStorage.setItem('search', search);
+    window.location.replace ("/ROPA-Ecommerce/#/Search")
+  }
+
  return (
   <>
-   <nav id="nav" className="navbar navbar-expand-sm navbar-light">
-    <div className="container-fluid">
+   <nav id="nav" className="navbar navbar-expand-md navbar-light">
+    <div className="container-fluid navbar-post-collapse  m-0 align-items-center">
      <a href="/ROPA-Ecommerce/"><img className="logo d-inline-block align-text-top " src={logo} alt="logo" /></a>
-      <button className="navbar-toggler" onClick={()=>setDisplayList(!displayList)}>
+     <div className="container-fluid search-toggler">
+      <form onSubmit={handleSubmitSearch} className="form-group d-flex flex-row justify-content-center w-100">
+        <input type="text" placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)} className="form-control w-75"/>
+        <button id="btn-search" type="submit" className="btn btn-light"><i className="bi bi-search"></i></button>
+      </form>
+    </div>
+    <button className="navbar-toggler" onClick={()=>setDisplayList(!displayList)}>
       <i className="bi bi-list"></i>
     </button>
+    </div>
+    <div className="container-fluid search-collapse">
+      <form action="" onSubmit={handleSubmitSearch} className="form-group d-flex flex-row justify-content-center w-100">
+        <input type="text" className="form-control w-75" placeholder="Search" value={search} onChange={(e)=>setSearch(e.target.value)}/>
+        <button id="btn-search"  className="btn btn-light"><i className="bi bi-search"></i></button>
+      </form>
     </div>
     <div className="collapse navbar-collapse">
      <ul className="navbar-nav me-auto mb-2 mb-lg-0">

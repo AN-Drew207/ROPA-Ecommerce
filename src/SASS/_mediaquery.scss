@@ -64,11 +64,6 @@
  .product-group-inner{
   grid-template-columns: 100%;
  }
- #hamburger-links{
-  position: sticky;
-  top:59px;
-  z-index: 2;
- }
  #Cart{
     h3, h5, h4, input{
        font-size: 15px;
@@ -99,9 +94,6 @@
    margin: 10px 0px;
   }
  }
- #hamburger-links{
-  display: none!important;
- }
  #Cart{
    h3, h4  {
        font-size: 20px;
@@ -126,4 +118,34 @@
      display: none;
   }
  }
+}
+
+@media (min-width:767px) {
+   .navbar-post-collapse{
+      width: auto!important;
+   }
+   .search-toggler{
+      display: none!important;
+   }
+   #hamburger-links{
+      display: none!important;
+     }
+}
+
+
+@media (max-width:767px) {
+   .navbar-post-collapse{
+      width: 100%!important;
+   }
+   .container-fluid{
+      flex-wrap: nowrap!important;
+   }
+   .search-collapse{
+      display: none!important;
+   }
+   #hamburger-links{
+      position: sticky;
+      top:59px;
+      z-index: 2;
+   }
 }
