@@ -5,10 +5,20 @@ const NavbarComponent = ()=>{
  const [displayList, setDisplayList]=useState(false)
  const [search, setSearch]=useState("")
 
-  const handleSubmitSearch =()=>{
-    window.localStorage.setItem('search', search);
-    window.location.replace ("/ROPA-Ecommerce/#/Search")
-    document.location.reload();
+  const handleSubmitSearch =(e)=>{
+    e.preventDefault();
+    if(search!=""){
+      window.localStorage.setItem('search', search);
+      if(window.location.href.indexOf("Search")===-1){
+        setTimeout(function(){
+          window.location.replace("/ROPA-Ecommerce/#/Search")
+        },100);
+      }else{
+        setTimeout(function(){
+         window.location.reload();
+        },100); 
+      } 
+    }
   }
 
  return (

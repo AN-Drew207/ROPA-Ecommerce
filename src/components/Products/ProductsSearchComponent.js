@@ -59,9 +59,6 @@ const ProductsSearchComponent =()=>{
         </div>
        </div>
        {
-            console.log(products)
-       }
-       {
          <div className="col-10 product-group product-group-inner">
          {
          products.filter((product)=>{
