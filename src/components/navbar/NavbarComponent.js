@@ -24,7 +24,7 @@ const NavbarComponent = ()=>{
  return (
   <>
    <nav id="nav" className="navbar navbar-expand-md navbar-light">
-    <div className="container-fluid navbar-post-collapse  m-0 align-items-center">
+    <div className="container-fluid navbar-post-collapse p-0 m-0 align-items-center">
      <a href="/ROPA-Ecommerce/"><img className="logo d-inline-block align-text-top " src={logo} alt="logo" /></a>
      <div className="container-fluid search-toggler">
       <form onSubmit={handleSubmitSearch} className="form-group d-flex flex-row justify-content-center w-100">

@@ -18,8 +18,7 @@ const ProductsSearchComponent =()=>{
    
     return( 
     isLoading ?
-    <section className="Cart-Empty d-flex flex-column
-    ">
+    <section className="Cart-Empty d-flex flex-column">
         <div className="spinner-border text-dark" role="status">
             <span className="visually-hidden"></span>
         </div>

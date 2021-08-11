@@ -8,6 +8,7 @@ import ProductPageComponent from './Products/ProductPageComponent';
 import Cart from './Cart/Cart';
 import CartPurchased from './Cart/CartPurchased';
 import ProductsSearchComponent from './Products/ProductsSearchComponent';
+import Footer from './Footer/Footer';
 
 const App = () =>{
   const [categories, setCategories]= useState([]);
@@ -45,6 +46,7 @@ const App = () =>{
       })
     }
   </Router>
+  <Footer/>
   </>
  )
 }

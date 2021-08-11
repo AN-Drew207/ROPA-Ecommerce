@@ -5,3 +5,8 @@
 @import 'ProductPage';
 @import 'Cart';
 @import 'mediaquery';
+@import 'Footer';
+
+#root{
+    min-height: 100vh;
+}

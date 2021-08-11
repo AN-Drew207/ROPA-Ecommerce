@@ -121,6 +121,9 @@
 }
 
 @media (min-width:767px) {
+   .logo{
+      height: 40px;
+   }
    .navbar-post-collapse{
       width: auto!important;
    }
@@ -134,6 +137,9 @@
 
 
 @media (max-width:767px) {
+   .logo{
+      height: 30px;
+     }
    .navbar-post-collapse{
       width: 100%!important;
    }
